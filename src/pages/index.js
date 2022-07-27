@@ -140,7 +140,6 @@ const Homepage = () => {
               </Button>
               Why use Pixie?
             </h2>
-
             <div className={`row ${styles.noInstrumentation} flex-row`}>
               <div className='col-1' />
               <div className='col-4 vertical-center'>

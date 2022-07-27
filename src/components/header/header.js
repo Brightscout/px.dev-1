@@ -81,16 +81,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
         <div className={styles.newsBar}>
 
           <span className='hide-not-desktop'>
-            Pixie is now a CNCF Sandbox project!
+            Export Pixie data in the OpenTelemetry format.
             {' '}
-            <a href='https://www.cncf.io/projects/pixie'>
+            <a href='http://blog.px.dev/plugin-system/'>
               Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-            <a href='https://www.cncf.io/projects/pixie'>Pixie is now a CNCF Sandbox project!</a>
+            <a href='http://blog.px.dev/plugin-system/'>Pixie has an OpenTelemetry plugin!</a>
           </span>
           <div
             className={`${styles.newsBarClose} hide-desktop`}
