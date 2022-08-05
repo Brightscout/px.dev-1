@@ -21,10 +21,10 @@ import { Link } from 'gatsby';
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import BodyClassName from 'react-body-classname';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
-import styles from './header.module.scss';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import * as styles from './header.module.scss';
 
 import docs from '../../images/footer/docs-icon.svg';
 import github from '../../images/footer/github-icon.svg';
@@ -83,14 +83,14 @@ const Header = ({ whiteHeader, transparentMenu }) => {
           <span className='hide-not-desktop'>
             Export Pixie data in the OpenTelemetry format.
             {' '}
-            <a href='http://blog.px.dev/plugin-system/'>
+            <a href='http://blog.px.dev/plugin-system/' target='_blank' rel='noreferrer'>
               Learn more
             </a>
             {' '}
              🚀
           </span>
           <span className='hide-desktop'>
-            <a href='http://blog.px.dev/plugin-system/'>Pixie has an OpenTelemetry plugin!</a>
+            <a href='http://blog.px.dev/plugin-system/' target='_blank' rel='noreferrer'>Pixie has an OpenTelemetry plugin!</a>
           </span>
           <div
             className={`${styles.newsBarClose} hide-desktop`}
@@ -116,16 +116,16 @@ const Header = ({ whiteHeader, transparentMenu }) => {
             <img src={pixieLogo} alt='pixie logo' />
           </Link>
           <div className={styles.socialIcons}>
-            <a href='https://slackin.px.dev'>
+            <a href='https://slackin.px.dev' target='_blank' rel='noreferrer'>
               <img src={slack} alt='slack' />
             </a>
-            <a href='https://github.com/pixie-io/pixie'>
+            <a href='https://github.com/pixie-io/pixie' target='_blank' rel='noreferrer'>
               <img src={github} alt='github' />
             </a>
-            <a href='https://twitter.com/pixie_run'>
+            <a href='https://twitter.com/pixie_run' target='_blank' rel='noreferrer'>
               <img src={twitter} alt='twitter' />
             </a>
-            <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured'>
+            <a href='https://www.youtube.com/channel/UCOMCDRvBVNIS0lCyOmst7eg/featured' target='_blank' rel='noreferrer'>
               <img src={youtube} alt='youtube' />
             </a>
           </div>
@@ -227,10 +227,9 @@ const Header = ({ whiteHeader, transparentMenu }) => {
                 </a>
               </li>
             </ul>
-
-            <Link to='https://www.linuxfoundation.org/terms'>Terms of Service</Link>
+            <Link to='https://www.linuxfoundation.org/terms' target='_blank' rel='noreferrer'>Terms of Service</Link>
             <br />
-            <Link to='https://www.linuxfoundation.org/privacy'>Privacy Policy</Link>
+            <Link to='https://www.linuxfoundation.org/privacy' target='_blank' rel='noreferrer'>Privacy Policy</Link>
           </div>
         </div>
         <IconButton onClick={() => setOpen(true)} className='hide-desktop'>
